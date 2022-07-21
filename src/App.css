@@ -14,11 +14,11 @@ code {
 }
 
 .App {
+  margin: auto;
   color: white;
   max-width: 880px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 20px 15% 0;
-  text-align: center;
 }

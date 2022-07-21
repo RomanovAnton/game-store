@@ -2,3 +2,6 @@
 @import url(./App.css);
 @import url(./components/Header/Header.css);
 @import url(./components/Cards/Cards.css);
+@import url(./components/Cards/CardItem.css);
+@import url(./components/Cards/Button.css);
+@import url(./components/Cards/CardGenre.css);

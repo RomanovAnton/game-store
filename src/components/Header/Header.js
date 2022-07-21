@@ -8,7 +8,7 @@ export default function Header() {
       <Link to="/" className="header__link">
         Game Store
       </Link>
-      <FaShoppingCart color="white" size={25} />
+      <FaShoppingCart style={{ margin: "0" }} color="white" size={20} />
     </div>
   );
 }

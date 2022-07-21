@@ -1,0 +1,34 @@
+.card-item {
+  border-radius: 15px;
+  background-color: rgb(36, 37, 41);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-item__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-item__title {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 0 10px 10px;
+}
+
+.card-item__genres {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 5px 0 5px 10px;
+  max-width: 100%;
+  font-size: 12px;
+}
+
+.card-item__buy {
+  display: flex;
+  gap: 15px;
+  justify-content: end;
+  padding: 10px 5px 5px 0;
+  align-items: center;
+}

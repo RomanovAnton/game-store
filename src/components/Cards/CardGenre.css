@@ -1,0 +1,7 @@
+.genres__item {
+  font-size: 12px;
+  border-radius: 15px;
+  background-color: rgb(80, 82, 84);
+  color: white;
+  padding: 2px;
+}
