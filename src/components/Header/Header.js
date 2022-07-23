@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";
+import CartBlock from "./Cart-block";
 
 export default function Header() {
   return (
@@ -8,7 +8,9 @@ export default function Header() {
       <Link to="/" className="header__link">
         Game Store
       </Link>
-      <FaShoppingCart style={{ margin: "0" }} color="white" size={20} />
+      <div className="cart-block">
+        <CartBlock />
+      </div>
     </div>
   );
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import classNames from "classnames"; // позволяет объединить условия в объект и не писать условыную конструкцию
 
-export default function Button({ type, size, onClick }) {
+export default function Button({ type, size, onClick, text }) {
   const btnClass = classNames({
-    "btn": true,
+    btn: true,
     "btn-primary": type === "primary",
     "btn-secondary": type === "secondary",
     "btn-medium": size === "m",
@@ -12,7 +12,7 @@ export default function Button({ type, size, onClick }) {
 
   return (
     <button className={btnClass} onClick={onClick}>
-      в корзину
+      {text}
     </button>
   );
 }

@@ -1,0 +1,26 @@
+.cart-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  width: 105px;
+}
+
+.cart-block__total-sum {
+  font-size: 16px;
+}
+
+.cart-block__items-in-cart {
+  position: absolute;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+  top: -13px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
