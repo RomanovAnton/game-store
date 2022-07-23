@@ -1,4 +1,5 @@
 import React from "react";
+import CartMenu from "./CartMenu";
 import { FaShoppingCart } from "react-icons/fa";
 import { useSelector } from "react-redux/es/exports";
 import calkTotalSum from "../../utils/utils";
@@ -16,8 +17,8 @@ function CartBlock() {
       {itemsInCart.length > 0 ? (
         <span className="cart-block__total-sum"> {totalSum}руб.</span>
       ) : null}
-      <div className="cart-block__list">
-        {/* <CartList /> */}
+      <div className="cart-block__menu">
+        <CartMenu />
       </div>
     </>
   );

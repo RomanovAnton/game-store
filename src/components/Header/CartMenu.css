@@ -1,0 +1,18 @@
+.game-list {
+  margin: 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+}
+
+.game-list__item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-price {
+  padding: 10px 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
