@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CartBlock from "./CartBlock";
 
-
 export default function Header() {
   return (
     <div className="header">

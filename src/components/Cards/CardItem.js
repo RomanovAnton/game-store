@@ -1,21 +1,19 @@
 import React from "react";
-import Button from "../../components/Button";
-import CardGenre from "./CardGenre";
-import { addItemInCart, removeItemFromCart } from "../../store/cart/reducer";
-import { useDispatch, useSelector } from "react-redux/es/exports";
+import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux/es/exports";
+import { setCurrentGame } from "../../store/game/reducer";
+import CardGenres from "./CardGenres";
+import CardBuy from "./CardBuy";
 
 export default function CardItem({ card }) {
+  const history = useHistory();
   const dispatch = useDispatch();
-  const itemsInCart = useSelector((state) => state.cart.itemsInCart);
-  const isItemInCart = itemsInCart.some((item) => item.id === card.id);
 
-  const handleCartClick = () => {
-    if (isItemInCart) {
-      dispatch(removeItemFromCart(card.id));
-    } else {
-      dispatch(addItemInCart(card));
-    }
+  const handleCardClick = () => {
+    dispatch(setCurrentGame(card));
+    history.push(`/card/${card.title}`);
   };
+
   return (
     <>
       {card ? (
@@ -24,23 +22,11 @@ export default function CardItem({ card }) {
             className="card-item__image"
             src={card.image}
             alt={card.name}
+            onClick={handleCardClick}
           ></img>
           <div className="card-item__title">{card.title}</div>
-          <div className="card-item__genres">
-            {card.genres.map((genre) => (
-              <CardGenre key={genre} genre={genre} />
-            ))}
-          </div>
-
-          <div className="card-item__buy">
-            <span>{card.price} руб.</span>
-            <Button
-              type={isItemInCart ? "secondary" : "primary"}
-              size={"s"}
-              onClick={handleCartClick}
-              text={isItemInCart ? "Убрать из корзины" : "В корзину"}
-            ></Button>
-          </div>
+          <CardGenres genres={card.genres} />
+          <CardBuy card={card} />
         </div>
       ) : (
         "404"

@@ -1,0 +1,29 @@
+.game-page {
+}
+.game-page__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-page__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.game-page__video-block {
+  width: 70%;
+}
+
+.game-page__caption-block {
+  width: 30%;
+}
+
+.caption-block__image {
+  max-width: 90%;
+}
+
+/* .caption-block__description {
+}
+
+.caption-block__mark {
+} */

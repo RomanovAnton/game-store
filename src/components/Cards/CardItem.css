@@ -2,12 +2,17 @@
   border-radius: 15px;
   background-color: rgb(36, 37, 41);
   overflow: hidden;
-  cursor: pointer;
 }
 
 .card-item__image {
   width: 100%;
   object-fit: cover;
+  cursor: pointer;
+}
+
+.card-item__image:hover {
+  opacity: 0.5;
+  transition: 0.4s;
 }
 
 .card-item__title {

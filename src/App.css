@@ -16,7 +16,7 @@ code {
 .App {
   margin: auto;
   color: white;
-  max-width: 880px;
+  max-width: 1128px;
   height: 100vh;
   display: flex;
   flex-direction: column;
