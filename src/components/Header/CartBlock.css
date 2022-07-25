@@ -27,7 +27,7 @@
 
 .cart-block__menu {
   position: absolute;
-  top: 12px;
+  top: 27px;
   left: -194px;
   width: 300px;
   margin: 0;
@@ -37,3 +37,4 @@
   display: flex;
   flex-direction: column;
 }
+

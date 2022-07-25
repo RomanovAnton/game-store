@@ -3,4 +3,5 @@ const calkTotalSum = (arr) => {
     return acc + cur.price;
   }, 0);
 };
+
 export default calkTotalSum;
