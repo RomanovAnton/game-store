@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button";
+import Button from "../../components/Button";
 import CardGenre from "./CardGenre";
 import { addItemInCart, removeItemFromCart } from "../../store/cart/reducer";
 import { useDispatch, useSelector } from "react-redux/es/exports";

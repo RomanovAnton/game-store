@@ -1,6 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
-import Cards from "./components/Cards/Cards";
+import HomePage from "./pages/HomePage/HomePage";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Switch>
         <Route path="/">
           <Header />
-          <Cards />
+          <HomePage />
         </Route>
       </Switch>
     </div>

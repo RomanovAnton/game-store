@@ -7,6 +7,6 @@
 @import url(./components/Header/CartBlock.css);
 @import url(./components/Header/CartMenu.css);
 
-@import url(./components/Cards/Cards.css);
+@import url(./pages/HomePage/HomePage.css);
 @import url(./components/Cards/CardItem.css);
 @import url(./components/Cards/CardGenre.css);
