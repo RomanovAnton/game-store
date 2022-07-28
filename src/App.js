@@ -9,14 +9,14 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-        <Route exact path="/">
-          <HomePage />
-        </Route>
         <Route  path="/card/:title">
           <GamePage />
         </Route>
         <Route  path="/order">
           <OrderPage />
+        </Route>
+        <Route exact path="/">
+          <HomePage />
         </Route>
       </Switch>
     </div>
