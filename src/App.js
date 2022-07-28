@@ -12,10 +12,10 @@ function App() {
         <Route exact path="/">
           <HomePage />
         </Route>
-        <Route exact path="/card/:title">
+        <Route  path="/card/:title">
           <GamePage />
         </Route>
-        <Route exact path="/order">
+        <Route  path="/order">
           <OrderPage />
         </Route>
       </Switch>
