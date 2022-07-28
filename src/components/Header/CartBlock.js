@@ -30,7 +30,11 @@ function CartBlock() {
 
   return (
     <div onClick={handleCartClick}>
-      <FaShoppingCart style={{ margin: "0" }} color="white" size={20} />
+      <FaShoppingCart
+        style={{ margin: "0", cursor: "pointer" }}
+        color="white"
+        size={20}
+      />
       {itemsInCart.length > 0 ? (
         <div className="cart-block__items-in-cart">{itemsInCart.length}</div>
       ) : null}

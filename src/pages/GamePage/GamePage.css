@@ -6,7 +6,8 @@
 }
 
 .game-page__title {
-  font-size: 16px;
+  font-size: 30px;
+  padding: 15px 0 15px;
   font-weight: bold;
 }
 
@@ -23,7 +24,9 @@
 }
 
 /* .caption-block__description {
-}
+    
+} */
 
 .caption-block__mark {
-} */
+  color: rgb(80, 82, 84);
+}

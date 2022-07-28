@@ -1,12 +1,12 @@
 import Button from "../Button";
+import { useHistory } from "react-router-dom";
+
 export default function CartMenu({ itemsInCart, totalSum }) {
+  const history = useHistory();
   const handleBtnClick = () => {
-    console.log("оформить заказ!");
+    history.push("/order");
   };
 
-  // if (itemsInCart.length < 1) {
-  //   return <span>Корзина пуста</span>;
-  // }
   return (
     <>
       <ul className="game-list">

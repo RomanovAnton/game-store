@@ -4,6 +4,7 @@
 @import url(./components/Button.css);
 @import url(./pages/HomePage/HomePage.css);
 @import url(./pages/GamePage/GamePage.css);
+@import url(./pages/OrderPage/OrderPage.css);
 
 @import url(./components/Header/Header.css);
 @import url(./components/Header/CartBlock.css);
@@ -11,3 +12,6 @@
 
 @import url(./components/Cards/CardItem.css);
 @import url(./components/Cards/CardGenres.css);
+
+@import url(./components/Order/OrderItem.css);
+@import url(./components/Order/OrderDescription.css);

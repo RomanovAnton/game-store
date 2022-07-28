@@ -1,0 +1,16 @@
+.order-page {
+  padding-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.order-page__game-items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 70%;
+}
+.order-page__order-description {
+  width: 30%;
+  text-align: end;
+}

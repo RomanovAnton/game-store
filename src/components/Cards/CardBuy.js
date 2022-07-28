@@ -7,8 +7,7 @@ export default function CardBuy({ card }) {
   const itemsInCart = useSelector((state) => state.cart.itemsInCart);
   const dispatch = useDispatch();
   const isItemInCart = itemsInCart.some((item) => item.id === card.id);
-  
-  console.log(card)
+
   if (!card) {
     return;
   }
