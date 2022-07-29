@@ -8,7 +8,8 @@ export default function OrderPage() {
 
   return (
     <>
-      {itemsInCart.length > 0 ? (
+    ORDERPAGE
+      {/* {itemsInCart.length > 0 ? (
         <div className="order-page">
           <div className="order-page__game-items">
             {itemsInCart.map((item) => (
@@ -19,7 +20,7 @@ export default function OrderPage() {
         </div>
       ) : (
         <p>Корзину пуста</p>
-      )}
+      )} */}
     </>
   );
 }
